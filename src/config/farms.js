@@ -1,0 +1,141 @@
+import tokens from "./tokens";
+import addresses from "constants/addresses";
+
+export const liquidityList = [
+  {
+    pid: 0,
+    lpSymbol: tokens.wild.symbol,
+    isTokenOnly: true,
+    lpAddresses: tokens.wild.address,
+    decimals: 18,
+    logoA: tokens.wild.logo,
+    logoB: "",
+  },
+  {
+    pid: 0,
+    lpSymbol: tokens.eth.symbol,
+    isTokenOnly: true,
+    lpAddresses: tokens.eth.address,
+    decimals: 18,
+    logoA: tokens.eth.logo,
+    logoB: "",
+  },
+  {
+    pid: 1,
+    lpSymbol: tokens.weth.symbol,
+    isTokenOnly: true,
+    lpAddresses: tokens.weth.address,
+    decimals: 18,
+    logoA: tokens.weth.logo,
+    logoB: "",
+  },
+  {
+    pid: 1,
+    lpSymbol: "SOL-BiLL",
+    isTokenOnly: false,
+    lpAddresses: addresses.wildWethlp,
+    decimals: 18,
+    logoA: tokens.wild.logo,
+    logoB: tokens.weth.logo,
+  },
+];
+
+export const zapList = [
+  {
+    pid: 0,
+    lpSymbol: tokens.wild.symbol,
+    isTokenOnly: true,
+    lpAddresses: tokens.wild.address,
+    decimals: 18,
+    logoA: tokens.wild.logo,
+    logoB: "",
+  },
+  {
+    pid: 0,
+    lpSymbol: tokens.eth.symbol,
+    isTokenOnly: true,
+    lpAddresses: tokens.eth.address,
+    decimals: 18,
+    logoA: tokens.eth.logo,
+    logoB: "",
+  },
+  {
+    pid: 1,
+    lpSymbol: tokens.weth.symbol,
+    isTokenOnly: true,
+    lpAddresses: tokens.weth.address,
+    decimals: 18,
+    logoA: tokens.weth.logo,
+    logoB: "",
+  },
+  {
+    pid: 1,
+    lpSymbol: "SOL-BiLL",
+    isTokenOnly: false,
+    lpAddresses: addresses.wildWethlp,
+    decimals: 18,
+    logoA: tokens.wild.logo,
+    logoB: tokens.weth.logo,
+  },
+];
+
+const farmsConfig = [
+  {
+    pid: 0,
+    lpSymbol: "BiLL-SOL",
+    lpAddresses: addresses.wildWethlp,
+    isTokenOnly: false,
+    isNFTPool: false,
+    token: tokens.wild,
+    quoteToken: tokens.weth,
+    logoA: "/assets/tokens/billLp.webp",
+    logoB: tokens.weth.logo,
+  },
+  {
+    pid: 1,
+    lpSymbol: "WETH-USDC",
+    lpAddresses: addresses.usdcLp,
+    isTokenOnly: false,
+    isNFTPool: false,
+    token: tokens.usdc,
+    quoteToken: tokens.weth,
+    logoA: tokens.weth.logo,
+    logoB: tokens.usdc.logo,
+  },
+  {
+    pid: 0,
+    lpSymbol: "GOLD-SOL",
+    lpAddresses: addresses.wildWethlp,
+    isTokenOnly: false,
+    isNFTPool: false,
+    token: tokens.wild,
+    quoteToken: tokens.weth,
+    logoA: "/assets/tokens/billLp.webp",
+    logoB: tokens.weth.logo,
+  },
+    {
+    pid: 0,
+    lpSymbol: "GOLD",
+    lpAddresses: addresses.wildWethlp,
+    isTokenOnly: true,
+    isNFTPool: false,
+    token: tokens.wild,
+    quoteToken: tokens.weth,
+    logoA: "/assets/tokens/billLp.webp",
+    logoB: "/assets/tokens/billLp.webp",
+  },
+  // {
+  //   pid: 3,
+  //   lpSymbol: "WETH",
+  //   lpAddresses: addresses.weth,
+  //   isTokenOnly: true,
+  //   isNFTPool: false,
+  //   token: tokens.weth,
+  //   quoteToken: tokens.weth,
+  //   logoA: tokens.weth.logo,
+  //   logoB: tokens.weth.logo,
+  // },
+
+];
+
+export default farmsConfig;
